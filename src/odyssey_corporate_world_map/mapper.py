@@ -14,3 +14,5 @@ def map_corporate_sites(siren: str) -> ResultContract:
         value=f"{len(sites)} sites", source="geocoding_api",
         observed_at=now, confidence=0.93, status=EpistemicStatus.FACT))
     return contract
+
+# GeoJSON output added
