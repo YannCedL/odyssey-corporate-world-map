@@ -9,7 +9,7 @@ description = "Corporate site geocoding and world map engine"
 readme = "README.md"
 requires-python = ">=3.10"
 authors = [{ name = "Genesis OSINT Team" }]
-dependencies = ["pydantic>=2.0.0", "genesis-core>=1.0.0", "fastapi>=0.100.0", "uvicorn>=0.22.0"]
+dependencies = ["pydantic>=2.0.0", "genesis-core>=1.0.0", "fastapi>=0.100.0", "uvicorn>=0.22.0", "httpx>=0.24.0"]
 
 [project.optional-dependencies]
 dev = ["pytest>=7.0.0"]
