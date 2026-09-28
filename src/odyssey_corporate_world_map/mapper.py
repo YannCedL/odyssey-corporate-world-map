@@ -79,7 +79,7 @@ def map_corporate_sites(siren: str = "383474814") -> ResultContract:
     # 1. Établissements Nationaux vérifiés via API SIRENE d'État
     try:
         with httpx.Client(timeout=8.0, headers=DEFAULT_HEADERS) as client:
-            resp_sirene = client.get(f"{SIRENE_SEARCH_URL}?q={siren}&per_page=1&include_admin=etablissements")
+            resp_sirene = client.get(f"{SIRENE_SEARCH_URL}?q={siren}&per_page=1")
             if resp_sirene.status_code == 200:
                 results = resp_sirene.json().get("results", [])
                 if results:
